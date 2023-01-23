@@ -10,7 +10,7 @@ const mongoose = require("mongoose");
 mongoose.connect(MONGODB_URI, () => {
     console.log("CONNECTED")
 }, () => {
-    console.log("ERROR")
+    console.log("ERROR MONGO NOT CONNECTED");
 })
 
 app.use(cors());
